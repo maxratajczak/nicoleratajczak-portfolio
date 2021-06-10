@@ -1,0 +1,15 @@
+{
+  "name": "nicoleratajcak-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Nicole Ratajczak, 2021",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Max Ratajczak",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "clipboard": "^2.0.8"
+  }
+}

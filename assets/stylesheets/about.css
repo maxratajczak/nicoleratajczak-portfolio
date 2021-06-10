@@ -1,0 +1,19 @@
+/* =================================== */
+/* Project: Nicole's Portfolio Website */
+/* Author: Max Ratajczak               */
+/* =================================== */
+
+/* CONTENT */
+#about, #education{
+    max-width: 50%;
+}
+#about h1, #education h1{
+    font-size: var(--font-size-A);
+}
+#about p, #education p{
+    font-size: var(--font-size-B);
+}
+#education{
+    margin-top: 5vh;
+}
+/* ******* */

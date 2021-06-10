@@ -1,0 +1,38 @@
+/* =================================== */
+/* Project: Nicole's Portfolio Website */
+/* Author: Max Ratajczak               */
+/* =================================== */
+
+.flex{
+    display: flex;
+}
+h1{
+    font-size: var(--font-size-A);
+}
+h2{
+    font-size: var(--font-size-B);
+}
+h3{
+    font-size: var(--font-size-C);
+}
+span{
+    font-size: 2.5rem;
+}
+
+div a{
+    transition: color var(--hover-transform-time) ease-in-out;
+}
+div a:hover{
+    color: lightblue;
+}
+
+#emailCpyBtn{
+    cursor: pointer;
+    transition: color var(--hover-transform-time) ease-in-out;
+}
+#emailCpyBtn:hover{
+    color: lightblue;
+}
+#emailCpyBtn::selection{
+    color: var(--font-color);
+}

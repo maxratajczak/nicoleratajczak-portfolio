@@ -1,0 +1,59 @@
+<!-- =================================== -->
+<!-- Project: Nicole's Portfolio Website -->
+<!-- Author: Max Ratajczak               -->
+<!-- =================================== -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Nicole Ratajczak</title>
+		<meta name="author" content="Max Ratajczak">
+		<meta name="description" content="Nicole Ratajczak About">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Animate.css, see https://animate.style/ -->
+		<link rel="stylesheet" href="/node_modules/animate.css/animate.min.css"/>
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="/assets/stylesheets/scrollbar.css">
+        <link rel="stylesheet" href="/assets/stylesheets/main.css">
+        <link rel="stylesheet" href="/assets/stylesheets/contact.css">
+		<!-- Favicon -->
+		<link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.png"/>
+	</head>
+
+	<body>
+		<header class="animate__animated animate__fadeIn">
+			<h1><a id="home-link" href="/">Nicole Ratajczak</a></h1>
+			<ul id="nav-links">
+				<li><a href="/">Projects</a></li>
+				<li><a href="/about/">About</a></li>
+				<li><a href="/contact/" style="color: black;">Contact</a></li>
+			</ul>
+		</header>
+
+		<main>
+            <div class="main-content animate__animated animate__fadeIn">
+                <div id="info">
+                    <h1>Contact</h1>
+                    <h2>You can contact me via email, LinkedIn or by the form below.</h2>
+                    <br><br><br>
+                    <div class="flex">
+                        <div style="margin-right: 2vw;">
+                            <h3 id="emailTitle">EMAIL</h3>
+                            <span title="Copy to clipboard" data-clipboard-text="ratajczaknicole@gmail.com" id="emailCpyBtn" >ratajczaknicole@gmail.com</span>
+                        </div>
+                        <div>
+                            <h3>LINKEDIN</h3>
+                            <a href="https://www.linkedin.com/in/nicole-ratajczak-3a9225141/" target="_blank" title="Redirect to LinkedIn"><span>Nicole Ratajczak</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</main>
+
+        <!-- Clipboard library by Zeno Rocha, see https://clipboardjs.com/ -->
+		<script src="/node_modules/clipboard/dist/clipboard.min.js"></script>
+		<script src="/assets/javascript/clipboard.js"></script>
+	</body>
+</html>
