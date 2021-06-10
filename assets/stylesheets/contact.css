@@ -19,6 +19,7 @@ span{
     font-size: 2.5rem;
 }
 
+
 div a{
     transition: color var(--hover-transform-time) ease-in-out;
 }
