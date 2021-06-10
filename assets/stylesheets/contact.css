@@ -22,6 +22,7 @@ span{
 
 div a{
     transition: color var(--hover-transform-time) ease-in-out;
+    color: var(--font-color);
 }
 div a:hover{
     color: lightblue;
@@ -29,6 +30,7 @@ div a:hover{
 
 #emailCpyBtn{
     cursor: pointer;
+    color: var(--font-color);
     transition: color var(--hover-transform-time) ease-in-out;
 }
 #emailCpyBtn:hover{
