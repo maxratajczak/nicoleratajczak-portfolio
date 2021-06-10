@@ -63,7 +63,7 @@ header{
     justify-content: space-between;
     align-items: center;
     position: sticky;
-    height: 90px;
+    height: 85px;
     top: 0%;
     z-index: 100;
     flex-wrap: wrap;
