@@ -1,0 +1,43 @@
+/* =================================== */
+/* Project: Nicole's Portfolio Website */
+/* Author: Max Ratajczak               */
+/* =================================== */
+
+
+:root{
+
+    --prg-spacing: 10vh;
+
+    --prg-desc-width: 80ch;
+
+    --prg-img-width: 30vw;
+    --prg-img-height: 90vh;
+}
+.flex{
+    display: flex;
+}
+
+.project-desc{
+    width: var(--prg-desc-width);
+    height: 70vh;
+    position: fixed;
+    overflow-y: scroll;
+
+}
+.project-desc h1{
+    font-size: var(--font-size-A);
+}
+.project-desc p{
+    font-size: var(--font-size-B);
+    color: var(--font-color);
+}
+
+.project-imgs{
+    margin: 0 auto;
+}
+.project-imgs img{
+    display: block;
+    max-height: var(--prg-img-height);
+    width: var(--prg-img-width);
+    margin-bottom: var(--prg-spacing);
+}
