@@ -41,4 +41,5 @@
     /* max-height: var(--prg-img-height); */
     width: var(--prg-img-width);
     margin-bottom: var(--prg-spacing);
+    cursor: pointer;
 }
