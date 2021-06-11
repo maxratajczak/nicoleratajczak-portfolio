@@ -6,11 +6,12 @@
 
 :root{
 
-    --prg-spacing: 10vh;
+    --prg-spacing: 5vh;
 
-    --prg-desc-width: 80ch;
+    --prg-desc-width: 22vw;
+    --prg-desc-height: 70vh;
 
-    --prg-img-width: 30vw;
+    --prg-img-width: 35vw;
     --prg-img-height: 90vh;
 }
 .flex{
@@ -19,9 +20,9 @@
 
 .project-desc{
     width: var(--prg-desc-width);
-    height: 70vh;
+    height: var(--prg-desc-height);
     position: fixed;
-    overflow-y: scroll;
+    overflow-y: auto;
 
 }
 .project-desc h1{
@@ -37,7 +38,7 @@
 }
 .project-imgs img{
     display: block;
-    max-height: var(--prg-img-height);
+    /* max-height: var(--prg-img-height); */
     width: var(--prg-img-width);
     margin-bottom: var(--prg-spacing);
 }
