@@ -137,7 +137,7 @@ header h1:hover{
     margin: var(--content-to-edge);
 }
 .text-section h1{
-    font-family: Karla-SemiBold;
+    font-family: Karla-Regular;
     font-size: var(--font-size-A);
 }
 .subheading{
