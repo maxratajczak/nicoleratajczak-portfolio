@@ -239,13 +239,13 @@ header h1:hover{
 @media only screen and (max-width: 1007px) {
 
     html{
-        font-size: var(--medium-fontsize);
+        font-size: 1vw;
     }
 }
 @media only screen and (max-width: 600px) {
 
     html{
-        font-size: var(--small-fontsize);
+        font-size: 1vw;
     }
     header{
         justify-content: center;
@@ -275,12 +275,6 @@ header h1:hover{
 @media only screen and (max-width: 440px) {
     .img-section img{
         margin-bottom: 5px;
-    }
-    .text-section h1, h2{
-        line-height: 30px;
-    }
-    .text-section p{
-        line-height: 20px;
     }
 } */
 /* ***** */
