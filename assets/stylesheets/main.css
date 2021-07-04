@@ -101,7 +101,7 @@ header h1{
 header h1:hover{
     backface-visibility: hidden;
     color: var(--hover-color);
-    transform: scale(1.05);
+    transform: scale(1.025);
 }
 #nav-links{
     margin-right: 4.5vw;
@@ -128,7 +128,7 @@ header h1:hover{
 }
 #nav-links li:hover{
     backface-visibility: hidden;
-    transform: scale(1.115);
+    transform: scale(1.08);
 }
 /* ****** */
 

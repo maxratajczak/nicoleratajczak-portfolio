@@ -45,10 +45,10 @@ function loadAllImages(){
     preloadImage("/projects/work-from-home/work-from-home-landing.jpg");
     preloadImage("/projects/rome-sketchbook/rome-sketchbook-landing.jpg");
     preloadImage("/projects/dance-of-ascent/dance-of-ascent-landing.jpg");
-    preloadImage("");
-    preloadImage("");
-    preloadImage("");
-    preloadImage("");
+    preloadImage("/projects/large-urban-building/large-urban-building-landing.jpg");
+    preloadImage("/projects/species-spaces-territories/species-spaces-territories-landing.jpg");
+    preloadImage("/projects/cambridge-commons/cambridge-commons-landing.jpg");
+    preloadImage("/projects/urban-rowhouse/urban-rowhouse-landing.jpeg");
 
 }
 
