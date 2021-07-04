@@ -32,7 +32,7 @@
 
     --content-to-edge: 4.5vw;
     --project-spacing: 10vh;
-    --text-to-image: 3vw;
+    --text-to-image: 2vw;
 
     --landing-image-width: 45vw;
     --landing-image-height: 80vh;
@@ -88,8 +88,7 @@ h1, h2, a, p{
     text-align: center;
     margin: 0 var(--content-to-edge);
     transition: transform var(--hover-transform-time) ease-in-out;
-    font-size: var(--font-size-A);
-}
+    font-size: var(--font-size-A);}
 #home-link:hover{
     backface-visibility: hidden;
     color: var(--hover-color);
@@ -140,19 +139,24 @@ header h1:hover{
     font-family: Karla-Regular;
     font-size: var(--font-size-A);
 }
-.subheading{
+/* .subheading{
     font-family: Karla-Regular !important;
     font-size: var(--font-size-B) !important;
-}
+} */
 .text-section{
-    line-height: 50px;
+    /* line-height: 50px; */
     position: relative;
-    top: -12px;
+    top: -10px;
+    text-align: justify;
 }
 .text-section p{
     font-size: var(--font-size-B);
-    max-width: 45ch;
-    line-height: 25px;
+    max-width: 35ch;
+    padding-bottom: var(--text-to-image);
+    /* line-height: 25px; */
+}
+.text-section h1{
+    padding-bottom: var(--text-to-image);
 }
 .img-section{
     display: flex;
@@ -210,6 +214,8 @@ header h1:hover{
 }
 .right-card .text-section a div p{
     display: inline-block;
+    text-align: justify;
+    width: 35ch;
 }
 /* ********** */
 

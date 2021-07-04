@@ -9,9 +9,15 @@ var imgCount = 0;
 function preloadImage(url) {
     var image = new Image();
     image.src = url;
-    var imgName = url.replace("/assets/projects/", "");
-    imgCount++;
-    console.log(`Loaded image "${imgName}"`);
+    var imgName = url.replace("/projects/", "");
+    if (image.complete) {
+        imgCount++;
+        console.log(`Loaded image "${imgName}"`);
+    }
+    else {
+        console.log(`Could not load image "${imgName}"`);
+    }
+    
 }
 
 // Displays landing page //
@@ -29,7 +35,7 @@ function hideContent(){
 
 // Image list to pre-load before landing page displays //
 function loadAllImages(){
-    preloadImage("/assets/projects/not-forever/not-forever-landing.jpg");
+    preloadImage("/projects/hispanic-society/01_hispanic society.jpg");
     preloadImage("/assets/projects/community-center/community-center-landing.jpg");
     preloadImage("/assets/projects/water-flows/water-flows-landing.jpg");
     preloadImage("/assets/projects/work-from-home/work-from-home-landing.jpg");
