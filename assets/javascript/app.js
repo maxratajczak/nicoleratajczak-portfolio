@@ -35,11 +35,21 @@ function hideContent(){
 
 // Image list to pre-load before landing page displays //
 function loadAllImages(){
-    preloadImage("/projects/hispanic-society/01_hispanic society.jpg");
-    preloadImage("/assets/projects/community-center/community-center-landing.jpg");
-    preloadImage("/assets/projects/water-flows/water-flows-landing.jpg");
-    preloadImage("/assets/projects/work-from-home/work-from-home-landing.jpg");
-    preloadImage("/assets/projects/wynford-gardens/wynford-gardens-landing.jpg");
+    preloadImage("/projects/hispanic-society/hispanic-society-landing.jpg");
+    preloadImage("/projects/not-forever/not-forever-landing.jpg");
+    preloadImage("/projects/industrial-facades/industrial-facades-landing.jpg");
+    preloadImage("/projects/community/community-landing.jpg");
+    preloadImage("/projects/public-pier/public-pier-landing.jpg");
+    preloadImage("/projects/plan-unplanned/plan-unplanned-landing.jpg");
+    preloadImage("/projects/water-flows/water-flows-landing.jpg");
+    preloadImage("/projects/work-from-home/work-from-home-landing.jpg");
+    preloadImage("/projects/rome-sketchbook/rome-sketchbook-landing.jpg");
+    preloadImage("/projects/dance-of-ascent/dance-of-ascent-landing.jpg");
+    preloadImage("");
+    preloadImage("");
+    preloadImage("");
+    preloadImage("");
+
 }
 
 function start(){
