@@ -5,7 +5,7 @@
 
 /* CONTENT */
 #about, #education{
-    max-width: 80ch;
+    max-width: 100ch;
 }
 #about h1, #education h1{
     font-size: var(--font-size-A);
