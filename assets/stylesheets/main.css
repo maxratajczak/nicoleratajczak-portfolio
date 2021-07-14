@@ -33,7 +33,7 @@
     --content-to-edge: 4.5vw;
     --project-spacing: 4vw;
     --text-to-image: 1.5vw;
-    --text-spacing: 1vw;
+    --text-spacing: 1.25vw;
 
     --landing-image-width: 45vw;
     --landing-image-height: 80vh;
@@ -148,7 +148,7 @@ header h1:hover{
     /* line-height: 50px; */
     position: relative;
     top: -10px;
-    text-align: justify;
+    /* text-align: justify; */
 }
 .text-section p{
     font-size: var(--font-size-B);
