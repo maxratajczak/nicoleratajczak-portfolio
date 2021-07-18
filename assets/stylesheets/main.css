@@ -8,10 +8,10 @@
     src: url(/assets/fonts/Karla-Regular.ttf);
     font-family: Karla-Regular;
 }
-@font-face{
+/* @font-face{
     src: url(/assets/fonts/Karla-SemiBold.ttf);
     font-family: Karla-SemiBold;
-}
+} */
 
 ::selection {
     color: var(--bg-color);
@@ -140,21 +140,14 @@ header h1:hover{
     font-family: Karla-Regular;
     font-size: var(--font-size-A);
 }
-/* .subheading{
-    font-family: Karla-Regular !important;
-    font-size: var(--font-size-B) !important;
-} */
 .text-section{
-    /* line-height: 50px; */
     position: relative;
     top: -10px;
-    /* text-align: justify; */
 }
 .text-section p{
     font-size: var(--font-size-B);
     max-width: 35ch;
     padding-bottom: var(--text-spacing);
-    /* line-height: 25px; */
 }
 .text-section h1{
     padding-bottom: var(--text-spacing);
@@ -218,9 +211,6 @@ header h1:hover{
     align-items: flex-end;
     flex-direction: column;
 }
-/* .right-card .text-section a div p{
-    text-align: justify;
-} */
 /* ********** */
 
 
