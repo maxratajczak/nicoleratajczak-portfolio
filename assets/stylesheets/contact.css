@@ -12,7 +12,7 @@ h1{
 h2, span{
     font-size: var(--font-size-B);
 }
-h3{
+h3, label, .required{
     font-size: var(--font-size-C);
 }
 
@@ -35,4 +35,51 @@ div a:hover{
 }
 #emailCpyBtn::selection{
     color: var(--font-color);
+}
+
+.required {
+    color: red;
+}
+
+#contact-form {
+
+    margin-right: var(--contact-to-edge);
+    margin-left: var(--contact-to-edge);
+}
+
+#contact-form label{
+    font-size: 1.5em;
+    transition: all 0s;
+}
+
+#contact-form input{
+    font-size: 2em;
+}
+
+#contact-form input{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid rgb(180, 180, 180);
+    padding: 10px 0;
+    width: 400px;
+    color: black;
+}
+
+#contact-form input:focus{
+    outline: none;
+}
+
+#contact-form textarea{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid rgb(180, 180, 180);
+    padding: 10px 0;
+    max-width: 56%;
+    min-width: 56%;
+    width: 56%;
+    min-height: 125px;
+    height: 125px;
+    color: black;
+    outline: none;
+    font-size: 2em;
 }
