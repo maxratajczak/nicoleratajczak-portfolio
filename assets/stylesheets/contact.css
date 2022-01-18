@@ -1,39 +1,40 @@
-/* =================================== */
-/* Project: Nicole's Portfolio Website */
-/* Author: Max Ratajczak               */
-/* =================================== */
 
-.flex{
+.flex {
     display: flex;
 }
-h1{
+
+h1 {
     font-size: var(--font-size-A);
 }
-h2, span{
+
+h2, span {
     font-size: var(--font-size-B);
 }
-h3, label, .required{
+
+h3, label, .required {
     font-size: var(--font-size-C);
 }
 
-
-div a{
+div a {
     transition: color var(--hover-transform-time) ease-in-out;
     color: var(--font-color);
 }
-div a:hover{
+
+div a:hover {
     color: lightblue;
 }
 
-#emailCpyBtn{
+#emailCpyBtn {
     cursor: pointer;
     color: var(--font-color);
     transition: color var(--hover-transform-time) ease-in-out;
 }
-#emailCpyBtn:hover{
+
+#emailCpyBtn:hover {
     color: lightblue;
 }
-#emailCpyBtn::selection{
+
+#emailCpyBtn::selection {
     color: var(--font-color);
 }
 
@@ -47,16 +48,16 @@ div a:hover{
     margin-left: var(--contact-to-edge);
 }
 
-#contact-form label{
+#contact-form label {
     font-size: 1.5em;
     transition: all 0s;
 }
 
-#contact-form input{
+#contact-form input {
     font-size: 2em;
 }
 
-#contact-form input{
+#contact-form input {
     background-color: transparent;
     border: 0;
     border-bottom: 1px solid rgb(180, 180, 180);
@@ -65,11 +66,11 @@ div a:hover{
     color: black;
 }
 
-#contact-form input:focus{
+#contact-form input:focus {
     outline: none;
 }
 
-#contact-form textarea{
+#contact-form textarea {
     background-color: transparent;
     border: 0;
     border-bottom: 1px solid rgb(180, 180, 180);
