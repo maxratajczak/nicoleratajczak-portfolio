@@ -1,14 +1,9 @@
-/* =================================== */
-/* Project: Nicole's Portfolio Website */
-/* Author: Max Ratajczak               */
-/* =================================== */
-
 
 :root{
 
     --prg-spacing: 5vh;
 
-    --prg-desc-width: 22vw;
+    --prg-desc-width: 24vw;
     --prg-desc-height: 70vh;
 
     --prg-img-width: 35vw;
@@ -23,7 +18,7 @@
     height: var(--prg-desc-height);
     position: fixed;
     overflow-y: auto;
-
+    padding-right: 25px;
 }
 .project-desc h1{
     font-size: var(--font-size-A);
@@ -42,4 +37,10 @@
     width: var(--prg-img-width);
     margin-bottom: var(--prg-spacing);
     cursor: pointer;
+}
+
+@media (max-width: 850px) {
+    .project-imgs {
+        margin-left: 40%;
+    }
 }

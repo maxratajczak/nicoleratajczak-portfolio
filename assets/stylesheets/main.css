@@ -1,9 +1,3 @@
-/* =================================== */
-/* Project: Nicole's Portfolio Website */
-/* Author: Max Ratajczak               */
-/* =================================== */
-
-/* UNIVERSAL ELEMENTS */
 @font-face{
     src: url(/assets/fonts/Karla-Regular.ttf);
     font-family: Karla-Regular;
@@ -22,7 +16,7 @@
     background: var(--font-color);
 }
 
-:root{
+:root {
     --bg-color: #f7f4ed;
     --font-color: #424242;
     --hover-color: black;
@@ -46,19 +40,22 @@
     --font-size-B: 2rem;
     --font-size-C: 1.5rem;
 }
-*{
+
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: Karla-Regular;
     font-weight: normal;
 }
-html{
+
+html {
     background-color: var(--bg-color);
     scroll-behavior: smooth;
     font-size: 62.50%;
 }
-header{
+
+header {
     background-color: var(--bg-color);
     display: flex;
     justify-content: space-between;
@@ -70,201 +67,198 @@ header{
     flex-wrap: wrap;
     text-align: center;
 }
-footer p{
+
+footer p {
     color: var(--font-color);
     text-align: center;
     margin-top: 15vh;
     margin-bottom: 10px;
     font-size: var(--font-size-C);
 }
-h1, h2, a, p{
+
+h1, h2, a, p {
     text-decoration: none;
     color: var(--font-color);
     padding: 0;
 }
-/* ****************** */
 
-/* NAVBAR */
-#home-link{
+#home-link {
     text-align: center;
     margin: 0 var(--content-to-edge);
     transition: transform var(--hover-transform-time) ease-in-out;
-    font-size: var(--font-size-A);}
-#home-link:hover{
+    font-size: var(--font-size-A);
+}
+
+#home-link:hover {
     backface-visibility: hidden;
     color: var(--hover-color);
 }
-header h1{
+
+header h1 {
     transition: transform var(--hover-transform-time) ease-in-out;
     transition-property: transform;
 }
-header h1:hover{
+
+header h1:hover {
     backface-visibility: hidden;
     color: var(--hover-color);
     transform: scale(1.025);
 }
-#nav-links{
+
+#nav-links {
     margin-right: 4.5vw;
     align-items: flex-start;
     position: relative;
     top: -5px;
 }
-#nav-links li{
+
+#nav-links li {
     display: inline-block;
     list-style: none;
     margin-left: 2vw;
     transition: transform var(--hover-transform-time) ease-in-out;
     
 }
-#nav-links li a{
+
+#nav-links li a {
     color: var(--font-color);
     text-decoration: none;
     font-size: var(--font-size-B);
     
 }
-#nav-links li a:hover{
+
+#nav-links li a:hover {
     backface-visibility: hidden;
     color: var(--hover-color);
 }
-#nav-links li:hover{
+
+#nav-links li:hover {
     backface-visibility: hidden;
     transform: scale(1.08);
 }
-/* ****** */
 
-/* BOTH CARDS */
-.main-content{
+.main-content {
     margin: var(--content-to-edge);
 }
-.text-section h1{
+
+.text-section h1 {
     font-family: Karla-Regular;
     font-size: var(--font-size-A);
 }
-.text-section{
+
+.text-section {
     position: relative;
     top: -10px;
 }
-.text-section p{
+
+.text-section p {
     font-size: var(--font-size-B);
     max-width: 35ch;
     padding-bottom: var(--text-spacing);
 }
-.text-section h1{
+
+.text-section h1 {
     padding-bottom: var(--text-spacing);
 }
-.img-section{
+
+.img-section {
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
 }
-.img-section img{
+
+.img-section img {
     max-width: var(--landing-image-width);
     max-height: var(--landing-image-height);
     transition: all var(--hover-transform-time) ease-in-out;
 }
-/* ********** */
 
-/* LEFT CARD */
-.left-card{
+.left-card {
     display: flex;
     justify-content: center;
     margin-top: var(--project-spacing);
 }
-.left-card .img-section a{
+
+.left-card .img-section a {
     align-self: flex-end;
 }
-.left-card .img-section img:hover{
+
+.left-card .img-section img:hover {
     backface-visibility: hidden;
     box-shadow: -7px 7px 7px var(--img-shadow);
     transform: scale(1.015);
 }
-.left-card .text-section{
+
+.left-card .text-section {
     display: flex;
     flex-flow: column;
     flex-basis: 50%;
     padding-left: var(--text-to-image);
 
 }
-/* ********* */
 
-/* RIGHT CARD */
-.right-card{
+.right-card {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     margin-top: var(--project-spacing);
 }
-.right-card .img-section img:hover{
+
+.right-card .img-section img:hover {
     backface-visibility: hidden;
     box-shadow: 7px 7px 7px var(--img-shadow);
     transform: scale(1.015);
 }
-.right-card .text-section{
+
+.right-card .text-section {
     display: flex;
     flex-flow: column;
     flex-basis: 50%;
     text-align: right;
     padding-right: var(--text-to-image);
 }
-.right-card .text-section a div{
+
+.right-card .text-section a div {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
 }
-/* ********** */
 
-
-
-
-
-/* MEDIA */
-/* @media only screen and (min-width: 2560px) {
-    html{
-        font-size: 0.6vw;
+@media (max-width: 850px) {
+    .left-card, .right-card {
+        flex-direction: column;
     }
-    header{
-        height: 120px;
+    .img-section {
+        flex-direction: row;
+        margin: 0 var(--content-to-edge);
     }
-}
-@media only screen and (max-width: 1007px) {
-
-    html{
-        font-size: 1vw;
+    .img-section img {
+        max-width: 100%;
     }
-}
-@media only screen and (max-width: 600px) {
-
-    html{
-        font-size: 1vw;
+    .text-section {
+        padding: 0 !important;
+        margin: 15px var(--content-to-edge) !important;
     }
-    header{
-        justify-content: center;
-        text-align: center;
-        align-content: center;
-        line-height: 22px;
-    }
-    .left-card, .right-card{
+    .right-card .text-section {
         display: block;
-        margin: 4vh 4vw 8vh 4vw;
+        text-align: left;
     }
-    .img-section{
-        flex-direction: row;
-
-    }
-    .img-section img{
-        max-width: 100% !important;
-        max-height: 100% !important;
-    }
-    .text-section{
-        flex-direction: row;
-        text-align: left !important;
-        left: 0 !important;
-        right: 0 !important;
+    .right-card .text-section a div{
+        display: block;
     }
 }
-@media only screen and (max-width: 440px) {
-    .img-section img{
-        margin-bottom: 5px;
+
+@media (max-width: 620px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
     }
-} */
-/* ***** */
+    #home-link {
+        margin: 0px !important;
+    }
+    #nav-links {
+        margin: 0px !important;
+        margin-top: 10px !important;
+    }
+}
