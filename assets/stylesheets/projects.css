@@ -29,6 +29,7 @@
 .project-desc p{
     font-size: 1.8rem;
     color: var(--font-color);
+    text-align: justify;
 }
 
 #title {
