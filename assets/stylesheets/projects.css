@@ -27,7 +27,7 @@
     font-size: 2.5rem;
 }
 .project-desc p{
-    font-size: var(--font-size-B);
+    font-size: 1.8rem;
     color: var(--font-color);
 }
 
