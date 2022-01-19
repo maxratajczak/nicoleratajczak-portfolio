@@ -15,9 +15,9 @@
 
 .project-desc{
     width: var(--prg-desc-width);
-    /* height: var(--prg-desc-height); */
-    /* position: fixed;
-    overflow-y: auto; */
+    height: var(--prg-desc-height);
+    position: fixed;
+    overflow-y: auto;
     padding-right: 25px;
 }
 .project-desc h1{
