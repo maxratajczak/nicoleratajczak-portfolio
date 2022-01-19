@@ -2,10 +2,10 @@
     src: url(/assets/fonts/Karla-Regular.ttf);
     font-family: Karla-Regular;
 }
-/* @font-face{
+@font-face{
     src: url(/assets/fonts/Karla-SemiBold.ttf);
     font-family: Karla-SemiBold;
-} */
+}
 
 ::selection {
     color: var(--bg-color);

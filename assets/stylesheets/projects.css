@@ -31,6 +31,10 @@
     color: var(--font-color);
 }
 
+#title {
+    font-family: Karla-SemiBold;
+}
+
 .project-imgs{
     margin: 0 auto;
 }
