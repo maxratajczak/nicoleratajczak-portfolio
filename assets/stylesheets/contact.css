@@ -24,6 +24,10 @@ div a:hover {
     color: lightblue;
 }
 
+#linkedInTitle {
+    margin-bottom: 5px;
+}
+
 #emailCpyBtn {
     cursor: pointer;
     color: var(--font-color);
@@ -111,4 +115,22 @@ label {
 #submitButton:hover {
     color: var(--bg-color);
     background-color: var(--font-color);
+}
+
+@media (max-width: 900px) {
+    #topInput {
+        flex-direction: column;
+    }
+    #emailBox {
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+    #contact-form textarea {
+        max-width: none !important;
+        min-width: 100% !important;
+        width: 100% !important;
+    }
+    #contact-form input {
+        width: 100%;
+    }
 }
