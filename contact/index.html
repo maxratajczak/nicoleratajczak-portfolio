@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="/assets/stylesheets/main.css">
         <link rel="stylesheet" href="/assets/stylesheets/contact.css">
 		<link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.png"/>
+
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 	</head>
 
 	<body>
@@ -30,31 +32,48 @@
             <div class="main-content animate__animated animate__fadeIn">
                 <div id="info">
                     <h1>Contact</h1><br><br>
-                    <h2>You can contact me via email, LinkedIn or by the form below.</h2>
+                    <h2>You can contact me via LinkedIn or by the form below.</h2>
                     <br><br><br><br>
                     <div class="flex">
-                        <div style="margin-right: 2vw;">
+                        <!-- <div style="margin-right: 2vw;">
                             <h3 id="emailTitle">EMAIL</h3>
                             <span title="Copy to clipboard" data-clipboard-text="ratajczaknicole@gmail.com" id="emailCpyBtn">ratajczaknicole@gmail.com</span>
-                        </div>
+                        </div> -->
                         <div>
                             <h3>LINKEDIN</h3>
                             <a href="https://www.linkedin.com/in/nicole-ratajczak-3a9225141/" target="_blank" title="Redirect to LinkedIn"><span>Nicole Ratajczak</span></a>                        </div>
                     </div>
 					<br><br><br><br>
-					<div class="flex">
-						<div>
-							<label for="name">NAME<span class="required">*</span></label>
-						<br>
-						</div>
-
-						<div>
-							<label for="message">MESSAGE<span class="required">*</span></label><br>
-						</div>
-						
+					<div class="formBox">
+						<form id="contact-form" action="https://formspree.io/f/xjvlgozz" method="POST">
+							<div id="topInput">
+								<div>
+									<label for="name">NAME<span class="required">*</span></label>
+									<input type="name" name="name" id="name" placeholder="Full Name" autocomplete="off" required>
+								</div>
+								<div id="emailBox">
+									<label for="email">EMAIL<span class="required">*</span></label>
+									<input type="email" name="email" id="email" placeholder="Your Email" autocomplete="off" required>
+								</div>
+							</div>
+							<div id="messageBox">
+								<label for="message">MESSAGE<span class="required">*</span></label>
+								<textarea name="message" id="message" placeholder="Tell me more..." autocomplete="off" required></textarea>
+							</div>
+							<button id="submitButton" type="submit">SEND MESSAGE</button>
+						</form>
 					</div>
                 </div>
             </div>
+
+			<script>
+				window.addEventListener("pageshow", () => {
+					$("#message").val("")
+					$("#name").val("")
+					$("#email").val("")
+				});
+			</script>
+
 		</main>
 
         <!-- Clipboard library by Zeno Rocha, see https://clipboardjs.com/ -->

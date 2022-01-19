@@ -42,15 +42,18 @@ div a:hover {
     color: red;
 }
 
-#contact-form {
-
-    margin-right: var(--contact-to-edge);
-    margin-left: var(--contact-to-edge);
+label {
+    display: block;
+    font-size: 1.5em;
 }
 
-#contact-form label {
-    font-size: 1.5em;
-    transition: all 0s;
+#topInput {
+    display: flex;
+}
+
+#contact-form {
+    margin-right: var(--contact-to-edge);
+    margin-left: var(--contact-to-edge);
 }
 
 #contact-form input {
@@ -75,12 +78,37 @@ div a:hover {
     border: 0;
     border-bottom: 1px solid rgb(180, 180, 180);
     padding: 10px 0;
-    max-width: 56%;
-    min-width: 56%;
-    width: 56%;
+    width: 840px;
+    max-width: 840px;
+    min-width: 840px;
     min-height: 125px;
     height: 125px;
     color: black;
     outline: none;
     font-size: 2em;
+}
+
+#emailBox {
+    margin-left: 40px;
+}
+
+#messageBox {
+    margin-top: 40px;
+}
+
+#submitButton {
+    font-size: 1.5em;
+    padding: 20px 50px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--font-color);
+    color: var(--font-color);
+    margin-top: 40px;
+    transition: color var(--hover-transform-time) ease-in-out,
+    background-color var(--hover-transform-time) ease-in-out;
+}
+
+#submitButton:hover {
+    color: var(--bg-color);
+    background-color: var(--font-color);
 }
