@@ -76,6 +76,7 @@ label {
     padding: 10px 0;
     width: 400px;
     color: black;
+    border-radius: 0px;
 }
 
 #contact-form input:focus {
