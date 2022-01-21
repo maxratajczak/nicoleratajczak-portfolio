@@ -1,6 +1,6 @@
 
 #about, #education {
-    max-width: 100ch;
+    max-width: 120ch;
 }
 
 #about h1, #education h1 {
@@ -8,7 +8,8 @@
 }
 
 #about p, #education p {
-    font-size: var(--font-size-B);
+    font-size: 2rem;
+    text-align: justify;
 }
 
 #education {

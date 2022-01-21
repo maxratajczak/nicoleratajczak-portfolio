@@ -24,8 +24,13 @@ div a:hover {
     color: lightblue;
 }
 
+.formBox {
+    margin-top: 90px;
+}
+
 #linkedInTitle {
-    margin-top: 50px;
+    font-size: 2rem;
+    margin-top: 90px;
 }
 
 #emailCpyBtn {

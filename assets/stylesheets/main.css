@@ -138,7 +138,7 @@ header h1:hover {
 }
 
 .main-content {
-    margin: var(--content-to-edge);
+    margin: 90px var(--content-to-edge);
 }
 
 .text-section h1 {
@@ -246,6 +246,9 @@ header h1:hover {
     .right-card .text-section a div{
         display: block;
     }
+    .main-content {
+        margin: 60px var(--content-to-edge);
+    }
 }
 
 @media (max-width: 620px) {
@@ -261,5 +264,8 @@ header h1:hover {
     #nav-links {
         margin: 0px !important;
         margin-top: 20px !important;
+    }
+    .main-content {
+        margin: 30px var(--content-to-edge);
     }
 }
