@@ -66,3 +66,8 @@
         align-items: center;
     }
 }
+@media (max-width: 500px) {
+    .project-desc p{
+        text-align: left;
+    }
+}
