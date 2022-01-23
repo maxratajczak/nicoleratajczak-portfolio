@@ -28,9 +28,17 @@ div a:hover {
     margin-top: 90px;
 }
 
+#infoLink {
+    width: max-content;
+}
+
 #linkedInTitle {
     font-size: 2rem;
     margin-top: 90px;
+}
+
+#infoBox {
+    max-width: max-content;
 }
 
 #emailCpyBtn {
