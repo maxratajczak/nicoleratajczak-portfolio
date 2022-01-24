@@ -4,5 +4,5 @@ var lightbox = new SimpleLightbox('.gallery a', {
     history: false,
     captions: false,
     disableRightClick: true,
-    fadeSpeed: 125
+    fadeSpeed: 150
 });
