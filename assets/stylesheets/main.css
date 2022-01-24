@@ -1,10 +1,12 @@
 @font-face{
     src: url(/assets/fonts/Karla-Regular.ttf);
     font-family: Karla-Regular;
+    -webkit-font-smoothing: antialiased;
 }
 @font-face{
     src: url(/assets/fonts/Karla-SemiBold.ttf);
     font-family: Karla-SemiBold;
+    -webkit-font-smoothing: antialiased;
 }
 
 ::selection {
@@ -85,7 +87,7 @@ h1, h2, a, p {
 #home-link {
     text-align: center;
     margin: 0 var(--content-to-edge);
-    transition: transform var(--hover-transform-time) ease-in-out;
+    transition: transform var(--hover-transform-time) ease;
     font-size: var(--font-size-A);
 }
 
@@ -95,14 +97,17 @@ h1, h2, a, p {
 }
 
 header h1 {
-    transition: transform var(--hover-transform-time) ease-in-out;
+    transition: transform var(--hover-transform-time) ease;
     transition-property: transform;
+    transform: perspective(1px) translateZ(0);
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 header h1:hover {
     backface-visibility: hidden;
     color: var(--hover-color);
-    transform: scale(1.025);
+    transform: scale(1.02);
 }
 
 #nav-links {
@@ -116,8 +121,10 @@ header h1:hover {
     display: inline-block;
     list-style: none;
     margin-left: 2vw;
-    transition: transform var(--hover-transform-time) ease-in-out;
-    
+    transition: transform var(--hover-transform-time) ease;
+    transform: perspective(1px) translateZ(0);
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 #nav-links li a {
@@ -134,7 +141,7 @@ header h1:hover {
 
 #nav-links li:hover {
     backface-visibility: hidden;
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
 .main-content {
